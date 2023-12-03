@@ -2,7 +2,7 @@
 거북이 좌표, 방향 을 넣은 큐?
 
 q. 거북이가 지나간 영역을 모두 포함할 수 있는 가장 작은 직사각형의 넓이.
-
+ㅎㅎg
 처음 시작: (0,0,0) x,y,k
 
 k는 dx,dy의 인덱스 넘버. 시계방향
@@ -37,16 +37,16 @@ for t in tlist:
             y = y+dy[k]
                     
         elif i == 'B':
-            nk = (k+2)%4 # 반대 방향은 인덱스 2 차이남.
-            x = x+ dx[nk]
-            y = y + dy[nk]
+            nk = (k+2)%4 # 반대 방향은 인덱스 2 차이남, 후진이지 방향을 바꾸는 건 아니므로 새로운 변수로.
+            x = x+dx[nk]
+            y = y+dy[nk]
                         
         elif i == 'L':
             k = (k+1)%4
             
         else:
             k = (k-1)%4
-        print(visited)
+        #print(visited)
         turtle.append((x,y,k))
         visited.append((x,y))
     

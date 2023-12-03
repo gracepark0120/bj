@@ -1,14 +1,11 @@
-"""
-
-
-"""
 import sys
 N = int(input())
 stack = []
 commands = []
 for n in range(N):
     command = sys.stdin.readline()
-    
+    """commands.append(sys.stdin.readline())
+for command in commands:"""
     if command[:4] == "push":
         stack.append(int(command[5:]))
     elif command[:3] == "pop":
